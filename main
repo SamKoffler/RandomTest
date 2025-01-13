@@ -1,0 +1,9 @@
+import random
+
+x1 = random.randint(1,5)
+
+x2 = random.randint(1,5)
+while x2 == x1:
+    x2 = random.randint(1,5)
+
+print(x1, x2)
