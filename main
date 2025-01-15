@@ -29,5 +29,6 @@ if user_input == best_answer:
     print("Correct!")
 elif len(correct_answers) == 1:
     print("Incorrect! The correct answer was", best_answer)
-#else:
-#    print("Incorrect! The correct answers were", ",".join(correct_answers))
+else:
+    correct_answers_string = ', '.join(correct_answers)
+    print("Incorrect! The correct answers were", correct_answers_string)
