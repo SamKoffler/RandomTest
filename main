@@ -20,7 +20,12 @@ for i in range(1,11):
         best_distance = min(abs(x1 - i), abs(x2 - i))
         best_answer = i
 
+correct_answers = []
+for i in range(1,11):
+    if min(abs(x1 - i), abs(x2 - i)) == best_distance:
+        correct_answers.append(i)
+
 if user_input == best_answer:
-    print("Correct!")
+    print("Correct! The answer was in fact")
 else:
     print("Incorrect! The correct answer was", best_answer)
